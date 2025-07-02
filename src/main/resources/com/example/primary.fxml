@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.PrimaryController"
+      spacing="15" alignment="TOP_CENTER" styleClass="root">
+
+    <TableView fx:id="tableView" prefHeight="200" prefWidth="400">
+        <columns>
+            <TableColumn fx:id="nameColumn" text="Name" />
+            <TableColumn fx:id="emailColumn" text="Email" />
+            <TableColumn fx:id="ageColumn" text="Age" />
+        </columns>
+    </TableView>
+
+    <TextField fx:id="nameField" promptText="Enter Name"/>
+    <TextField fx:id="emailField" promptText="Enter Email"/>
+    <TextField fx:id="ageField" promptText="Enter Age"/>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button fx:id="insertButton" text="Insert"/>
+        <Button fx:id="updateButton" text="Update"/>
+        <Button fx:id="deleteButton" text="Delete"/>
+        <Button fx:id="viewButton" text="View Data"/>
+    </HBox>
+
+</VBox>
